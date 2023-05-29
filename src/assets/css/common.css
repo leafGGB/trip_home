@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #ff9854;
+  --line-color: #faf8f9;
+  --theme-linear-gradient: linear-gradient(90deg, #fa8c1d, #fcaF3F);
+
+  /* 全局变量：任何地方只要用到这个变量都会被修改 */
+  /* --van-tabbar-item-icon-size: 30px !important; */
+
+  /* 全局修改search 搜索框图标颜色 */
+  --van-search-left-icon-color: var(--primary-color) !important;
+  --van-primary-color: var(--primary-color);
+}
+
+body {
+  font-size: 14px;
+}
+
+/* // 隐藏tab-bar方案二 */
+.top-page {
+  position: relative;
+  z-index: 9;
+  height: 100vh;
+  background-color: #fff;
+
+  overflow-y: auto;
+}
+
+.bottom-gray-line {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.icon_check {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/detail/icon_check.png) 0 0 / 100% 100%;
+}
+
+.detail_icon_chat {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/detail/icon_chat.png) 0 0 / 100% 100%;
+}
+
+.detail_icon_order {
+  display: block;
+  width: 14px;
+  height: 17px;
+  background: url(../img/detail/icon_order.png) 0 0 / 100% 100%;
+}
